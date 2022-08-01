@@ -15,7 +15,7 @@ def init():
         print(filename)
         # Open the image form working directory
         image = Image.open(file)
-        model = load_model("Pneumonia")
+        model = load_model("pneumonia")
         img = np.asarray(image)
         img.resize((150,150,3))
         img = np.asarray(img, dtype="float32") #need to transfer to np to reshape
